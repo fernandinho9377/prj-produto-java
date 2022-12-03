@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
-public class PrjProdutosJavaApplication {
+public class PrjProdutoJavaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PrjProdutosJavaApplication.class, args);
+		SpringApplication.run(PrjProdutoJavaApplication.class, args);
 	}
 	@GetMapping("/hello")
 	public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {

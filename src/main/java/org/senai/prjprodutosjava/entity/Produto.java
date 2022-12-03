@@ -1,4 +1,4 @@
-package org.senai.prjprodutosjava;
+package org.senai.prjprodutosjava.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -6,15 +6,14 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Usuario {
+public class Produto {
 
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
     private Integer id;
     private String nome;
     private String descricao;
-    private Integer valor;
-    
+    private float valor;
     public Integer getId() {
         return id;
     }
@@ -33,10 +32,10 @@ public class Usuario {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
-    public Integer getValor() {
+    public float getValor() {
         return valor;
     }
-    public void setValor(Integer valor) {
+    public void setValor(float valor) {
         this.valor = valor;
     }
     
